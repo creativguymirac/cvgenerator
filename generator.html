@@ -37,73 +37,77 @@
                 </p>
             </div>
 
-            <div>
-                <div id="form" class="px-2">
-                    <form action="" method="POST" class="w-100 d-flex flex-column align-items-center mt-7">
+            <div class="w-100 d-xl-flex gap-5 mt-5 px-4 lg-px-8">
+                <div id="form" class="form-custom">
+                    <form action="" method="POST" class="w-100 d-flex flex-column  align-items-center">
                         
-                        <div class="w-100 row mb-2">
+                        <div class="w-100 mb-2">
                             <h2 class="">Informations Général</h2>
-                            <div class="form-group row mx-auto">
-                                <label for="" class="p-0">Nom</label>
-                                <input type="text" class="form-control mb-3" placeholder="Doe">
-                                <label for="" class="p-0">Prénom</label>
-                                <input type="text" class="form-control mb-3" placeholder="John">
-                                <label for="" class="p-0">Intitulé</label>
-                                <input type="text" class="form-control mb-3" placeholder="Développeur">
+                            <div class="d-md-flex gap-2">
+                                <div class="form-group mx-auto mx-md-0 flex-md-grow-1">
+                                    <label for="" class="p-0">Nom</label>
+                                    <input type="text" class="form-control mb-3" placeholder="Doe" id="nameInput">
+                                    <label for="" class="p-0">Prénom</label>
+                                    <input type="text" class="form-control mb-3" placeholder="John" id="firstnameInput">
+                                    <label for="" class="p-0">Intitulé</label>
+                                    <input type="text" class="form-control mb-3" placeholder="Développeur" id="mainTitleInput">
+                                </div>
+                                
+                                <div class="form-group mx-auto mx-md-0 flex-md-grow-1">
+                                    <label for="" class="p-0">Adresse</label>
+                                    <input type="text" class="form-control mb-3" placeholder="7 rue de la République, 69003 Lyon" id="addressInput">
+                                    <label for="" class="p-0">Numéro de téléphone</label>
+                                    <input type="text" class="form-control mb-3" placeholder="06 62 54 65 96" id="phoneInput">
+                                    <label for="" class="p-0">Adresse mail</label>
+                                    <input type="text" class="form-control mb-3" placeholder="example@mail.com" id="mailInput">
+                                </div>
                             </div>
-                            
-                            <div class="form-group row mx-auto">
-                                <label for="" class="p-0">Adresse</label>
-                                <input type="text" class="form-control mb-3" placeholder="7 rue de la République, 69003 Lyon">
-                                <label for="" class="p-0">Numéro de téléphone</label>
-                                <input type="text" class="form-control mb-3" placeholder="06 62 54 65 96">
-                                <label for="" class="p-0">Adresse mail</label>
-                                <input type="text" class="form-control mb-3" placeholder="example@mail.com">
-                                <label for="" class="p-0">Description</label>
-                                <textarea name="" id="" class="form-control mb-3" placeholder="Je suis.."></textarea>
-                            </div>
+                            <label for="" class="p-0">Description</label>
+                            <textarea name="" id="" class="form-control mb-3" placeholder="Je suis.." id="descPersoInput"></textarea>
                         </div>
 
-                        <div class="w-100 row mb-4">
-                            <h2>Formations</h2>
-                            <div class="form-group row mx-auto">
-                                <label for="" class="p-0">Intitulé du diplôme ou formation</label>
-                                <input type="text" class="form-control mb-3" placeholder="Mastère">
-                                <label for="" class="p-0">Établissement</label>
-                                <input type="text" class="form-control mb-3" placeholder="Université">
-                                <label for="" class="p-0">Date de début</label>
-                                <input type="date" class="form-control mb-3">
-                                <label for="" class="p-0">Date de fin (Facultatif)</label>
-                                <input type="date" class="form-control mb-3">
-                                <label for="" class="p-0">Description</label>
-                                <textarea name="" id="" class="form-control mb-3" placeholder="Étude des droits.."></textarea>
-                                <button class="btn btn-lg btn-hero">Ajouter la formation</button>
+                        <div class="d-md-flex gap-2">
+                            <div class="w-100 mb-4">
+                                <h2>Formations</h2>
+                                <div class="form-group row mx-auto mx-md-0 flex-md-grow-1">
+                                    <label for="" class="p-0">Intitulé du diplôme ou formation</label>
+                                    <input type="text" class="form-control mb-3" placeholder="Mastère" id="titleFormInput">
+                                    <label for="" class="p-0">Établissement</label>
+                                    <input type="text" class="form-control mb-3" placeholder="Université" id="schoolInput">
+                                    <label for="" class="p-0">Date de début</label>
+                                    <input type="date" class="form-control mb-3" id="startDateSchoolInput">
+                                    <label for="" class="p-0">Date de fin (Facultatif)</label>
+                                    <input type="date" class="form-control mb-3" id="endDateSchoolInput">
+                                    <label for="" class="p-0">Description</label>
+                                    <textarea name="" id="" class="form-control mb-3" placeholder="Étude des droits.." id="descSchoolInput"></textarea>
+                                    <button class="btn btn-lg btn-hero flex-grow-1" id="addFormation">Ajouter la formation</button>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="w-100 row mb-4">
-                            <h2>Expériences professionnelles</h2>
-                            <div class="form-group row mx-auto">
-                                <label for="" class="p-0">Intitulé du poste</label>
-                                <input type="text" class="form-control mb-3" placeholder="Développeur Full-Stack">
-                                <label for="" class="p-0">Nom de l'entreprise</label>
-                                <input type="text" class="form-control mb-3" placeholder="Google">
-                                <label for="" class="p-0">Date de début</label>
-                                <input type="date" class="form-control mb-3">
-                                <label for="" class="p-0">Date de fin (Facultatif)</label>
-                                <input type="date" class="form-control mb-3">
-                                <label for="" class="p-0">Description des missions</label>
-                                <textarea name="" id="" class="form-control mb-3" placeholder="Étude des droits.."></textarea>
-                                <button class="btn btn-lg btn-hero">Ajouter l'experience</button>
+                            <div class="w-100 mb-4">
+                                <h2>Expériences</h2>
+                                <div class="form-group row mx-auto mx-md-0 flex-md-grow-1">
+                                    <label for="" class="p-0">Intitulé du poste</label>
+                                    <input type="text" class="form-control mb-3" placeholder="Développeur Full-Stack" id="titleExpInput">
+                                    <label for="" class="p-0">Nom de l'entreprise</label>
+                                    <input type="text" class="form-control mb-3" placeholder="Google" id="companyNameInput">
+                                    <label for="" class="p-0">Date de début</label>
+                                    <input type="date" class="form-control mb-3" id="startDateExpInput">
+                                    <label for="" class="p-0">Date de fin (Facultatif)</label>
+                                    <input type="date" class="form-control mb-3" id="endDateExpInput">
+                                    <label for="" class="p-0">Description des missions</label>
+                                    <textarea name="" id="" class="form-control mb-3" placeholder="Étude des droits.." id="descExpInput"></textarea>
+                                    <button class="btn btn-lg btn-hero flex-grow-1" id="addExperience">Ajouter l'experience</button>
+                                </div>
                             </div>
                         </div>
 
                         <div class="w-100 row mb-4">
                             <div class="form-group row mx-auto">
                                 <label for="" class="p-0">Compétences</label>
-                                <input type="text" class="form-control mb-3" placeholder="Excel">
+                                <input type="text" class="form-control mb-3" placeholder="Excel" id="competenceInput">
                                 <label for="" class="p-0">Niveau</label>
-                                <select name="" id="" class="form-control mb-3">
+                                <select name="" id="" class="form-control mb-3" id="levelInput">
                                     <option value="">Débutant</option>
                                     <option value="">Amateur</option>
                                     <option value="">Confirmé</option>
@@ -111,7 +115,7 @@
                                 </select>
                                 <div class="w-100 d-flex gap-2 p-0">
                                     <!-- <button class="btn btn-lg btn-hero flex-grow-1">Effacer</button> -->
-                                    <button class="btn btn-lg btn-hero flex-grow-1">Ajouter compétence</button>
+                                    <button class="btn btn-lg btn-hero flex-grow-1" id="addCompetence">Ajouter compétence</button>
                                 </div>
                             </div>
                         </div>
@@ -120,11 +124,6 @@
                             <h2 class="mb-3">Gestion du contenu du CV</h2>
                             <div class="w-100 d-flex flex-wrap align-items-center gap-2 mb-3">
                                 <p class="p-0 m-0">Expériences:</p>
-                                <button class="btn-del-content"><span class="p-1"><span class="p-1"><img src="assets/images/close-icon.svg" alt="close icon"></span></span>Developpeur</button>
-                                <button class="btn-del-content"><span class="p-1"><span class="p-1"><img src="assets/images/close-icon.svg" alt="close icon"></span></span>Developpeur</button>
-                                <button class="btn-del-content"><span class="p-1"><span class="p-1"><img src="assets/images/close-icon.svg" alt="close icon"></span></span>Developpeur</button>
-                                <button class="btn-del-content"><span class="p-1"><span class="p-1"><img src="assets/images/close-icon.svg" alt="close icon"></span></span>Developpeur</button>
-                                <button class="btn-del-content"><span class="p-1"><span class="p-1"><img src="assets/images/close-icon.svg" alt="close icon"></span></span>Developpeur</button>
                                 <button class="btn-del-content"><span class="p-1"><span class="p-1"><img src="assets/images/close-icon.svg" alt="close icon"></span></span>Developpeur</button>
                             </div>
                             <div class="w-100 d-flex flex-wrap align-items-center gap-2 mb-3">
@@ -136,10 +135,66 @@
                                 <button class="btn-del-content"><span class="p-1"><span class="p-1"><img src="assets/images/close-icon.svg" alt="close icon"></span></span>Developpeur</button>
                             </div>
                         </div>
+                        <div class="w-100 d-flex gap-2 p-0">
+                            <button class="btn btn-lg btn-hero flex-grow-1" id="resetForm">Réinitialiser CV</button>
+                            <button class="btn btn-lg btn-hero flex-grow-1" id="downloadCV">Télécharger mon CV</button>
+                        </div>
                     </form>
                 </div>
-                <div id="preview">
 
+                <div class="w-100 mt-5 mt-xl-0" id="preview">
+                   <div class="preview-h scrollbar-hide">
+                        <div class="cv-container">
+                            <div class="header">
+                                <h1>John Doe</h1>
+                                <p>Développeur Full Stack</p>
+                                <p class="no-print">Cette section ne sera pas visible dans le PDF</p>
+                            </div>
+                            
+                            <div class="section">
+                                <h2>Informations Personnelles</h2>
+                                <div class="info-grid">
+                                    <div>
+                                        <strong>Email:</strong> john.doe@example.com
+                                    </div>
+                                    <div>
+                                        <strong>Téléphone:</strong> +33 1 23 45 67 89
+                                    </div>
+                                    <div>
+                                        <strong>Ville:</strong> Paris, France
+                                    </div>
+                                    <div>
+                                        <strong>Site Web:</strong> www.johndoe.dev
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="section">
+                                <h2>Expérience Professionnelle</h2>
+                                <div>
+                                    <h3>Développeur Senior - TechCorp</h3>
+                                    <p><em>2020 - Présent</em></p>
+                                    <p>Développement d'applications web avec PHP, JavaScript, React</p>
+                                </div>
+                                <div>
+                                    <h3>Développeur Web - WebSolutions</h3>
+                                    <p><em>2018 - 2020</em></p>
+                                    <p>Création de sites vitrines et e-commerce</p>
+                                </div>
+                            </div>
+                            
+                            <div class="section">
+                                <h2>Compétences</h2>
+                                <ul>
+                                    <li>PHP, Laravel, Symfony</li>
+                                    <li>JavaScript, React, Vue.js</li>
+                                    <li>HTML5, CSS3, Sass</li>
+                                    <li>MySQL, MongoDB</li>
+                                    <li>Git, Docker, CI/CD</li>
+                                </ul>
+                            </div>
+                        </div>
+                   </div>
                 </div>
             </div>
         </section>
