@@ -1,0 +1,17 @@
+{
+    "name": "champen/print-generator",
+    "autoload": {
+        "psr-4": {
+            "Champen\\PrintGenerator\\": "."
+        }
+    },
+    "authors": [
+        {
+            "name": "Nohan Champenois",
+            "email": "nohan.champenois@epitech.eu"
+        }
+    ],
+    "require": {
+        "spatie/browsershot": "^5.2"
+    }
+}
