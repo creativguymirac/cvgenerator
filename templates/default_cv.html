@@ -1,122 +1,101 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV - Export PDF</title>
-    <style>
-        *, ::before, ::after {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        
-
-        .wrapper {
-            width: 100%;
-            /* padding: 2rem 1rem; */
-            h1 {
-                font-size: 32px;
-                font-weight: 800;
-                margin: 0 0 1rem 0;
-            }
-            h2 {
-                font-size: 24px;
-                font-weight: 600;
-                margin: 0 0 0.5rem 0;
-            }
-            h3 {    
-                font-size: 18px;
-                font-weight: 400;
-                margin: 0 0 0.5rem 0;
-            }
-
-            .section {
-                margin: 0 0 0.5rem 0;
-            }
-        }
-
-        .head {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            padding: 2rem 1rem 1rem 1rem;
-            margin: 0 0 1rem 0;
-            background-color: blue;
-
-            h1, h2, p {
-                color: #fff;
-            }
-        }
-
-        .body {
-            width: 100%;
-            padding: 0 1rem;
-        }
-
-        .spacer {
-            height: 1px;
-            background-color: #fff;
-            margin: 1rem 0 1rem 0;
-        }
-
-        .block {
-            display: flex;
-            gap: 2rem;
-        }
-        
-    </style>
-</head>
-<body>
-    <div class="wrapper">
-        <div class="head">
-            <h1><span id="firstNamePre">John</span> <span id="namePre">Doe</span></h1> <!-- Nom Prénom -->
-            <h2 id="mainTitlePre">Développeur Full-Stack</h2>
-            <span class="spacer"></span>
-            <div>
-                <p id="addressPre">7 rue du puit, 69001 Lyon</p>
-                <p id="phonePre">06 32 76 78 99</p>
-                <p id="mail">example@mail.com</p>
-            </div>
-            <span class="spacer"></span>
-            <p id="mainDescPre">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, temporibus? Blanditiis, corrupti voluptas nobis dicta illo praesentium in non dolorem minima unde nam error illum vero reiciendis incidunt, exercitationem ipsa!</p>
-            <span class="spacer"></span>
-        </div>
-
-        <div class="body">
-            <h2>Compétences</h2>
-            <div class="section competence">
-                <p><span>HTML & CSS</span> - <span>Débutant</span></p>
-                <p><span>Javascript</span> - <span>Débutant</span></p>
-            </div>
-
-            <div class="block">
-                <div>
-                    <h2>Formation</h2>
-                    <div class="section formation">
-                        <h3><span id="formTitlePre">Formation Développeur Full-Stack</span> - <span id="schoolNamePre">Epitech</span></h3>
-                        <p><span id="endDateFormPre">01/02/2025</span> - <span id="endDateFormPre">01/02/2026</span></p>
-                        <div class="missionsForm">
-                            <p>Mission 1</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div>
-                    <h2>Expérience</h2>
-                    <div class="section experience">
-                        <h3><span id="formTitlePre">Développeur Full-Stack</span> - <span id="schoolNamePre">Google</span></h3>
-                        <p><span>01/07/2025</span> - <span>01/09/2026</span></p>
-                        <div class="missionsForm">
-                            <p>Mission 1</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-</body>
-</html>
+                             <style>
+                                 *, ::before, ::after {
+                                     box-sizing: border-box;
+                                     margin: 0;
+                                     padding: 0;
+                                     font-family: Arial, Helvetica, sans-serif;
+                                 }
+                                 
+                                 .wrapper {
+                                     width: 100%;
+                                     /* padding: 2rem 1rem; */
+                                     h1 {
+                                         font-size: 24px;
+                                         font-weight: 800;
+                                         margin: 0 0 0.5rem 0;
+                                     }
+                                     h2 {
+                                         font-size: 18px;
+                                         font-weight: 600;
+                                         margin: 0 0 0.5rem 0;
+                                     }
+                                     h3 {    
+                                         font-size: 16px;
+                                         font-weight: 400;
+                                         margin: 0 0 0.5rem 0;
+                                     }
+                                     .section {
+                                         margin: 0 0 0.5rem 0;
+                                     }
+                                 }
+                                 .head {
+                                     width: 100%;
+                                     display: flex;
+                                     flex-direction: column;
+                                     padding: 2rem 1rem 1rem 1rem;
+                                     margin: 0 0 1rem 0;
+                                     background-color: blue;
+                                     h1, h2, p {
+                                         color: #fff;
+                                     }
+                                 }
+                                 .body {
+                                     width: 100%;
+                                     padding: 0 1rem;
+                                 }
+                                 .spacer {
+                                     height: 1px;
+                                     background-color: #fff;
+                                     margin: 0.5rem 0 1rem 0;
+                                     margin: 0.5rem 0 0.5rem 0;
+                                 }
+                                 .block {
+                                     display: flex;
+                                     gap: 2rem;
+                                 }
+                                 
+                             </style>
+                             <div class="wrapper">
+                                 <div class="head">
+                                     <h1><span id="firstNamePre"></span> <span id="namePre">Doe</span></h1> <!-- Nom Prénom -->
+                                     <h2 id="mainTitlePre">Développeur Full-Stack</h2>
+                                     <span class="spacer"></span>
+                                     <div>
+                                         <p id="addressPre">7 rue du puit, 69001 Lyon</p>
+                                         <p id="phonePre">06 32 76 78 99</p>
+                                         <p id="mail">example@mail.com</p>
+                                     </div>
+                                     <span class="spacer"></span>
+                                     <p id="mainDescPre">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, temporibus? Blanditiis, corrupti voluptas nobis dicta illo praesentium in non dolorem minima unde nam error illum vero reiciendis incidunt, exercitationem ipsa!</p>
+                                     <span class="spacer"></span>
+                                 </div>
+                                 <div class="body">
+                                     <h2>Compétences</h2>
+                                     <div class="section competence">
+                                         <p><span>HTML & CSS</span> - <span>Débutant</span></p>
+                                         <p><span>Javascript</span> - <span>Débutant</span></p>
+                                     </div>
+                                     <div class="block">
+                                         <div>
+                                             <h2>Formation</h2>
+                                             <div class="section formation">
+                                                 <h3><span id="formTitlePre">Formation Développeur Full-Stack</span> - <span id="schoolNamePre">Epitech</span></h3>
+                                                 <p><span id="endDateFormPre">01/02/2025</span> - <span id="endDateFormPre">01/02/2026</span></p>
+                                                 <div class="missionsForm">
+                                                     <p>Mission 1</p>
+                                                 </div>
+                                             </div>
+                                         </div>
+                                         <div>
+                                             <h2>Expérience</h2>
+                                             <div class="section experience">
+                                                 <h3><span id="formTitlePre">Développeur Full-Stack</span> - <span id="schoolNamePre">Google</span></h3>
+                                                 <p><span>01/07/2025</span> - <span>01/09/2026</span></p>
+                                                 <div class="missionsForm">
+                                                     <p>Mission 1</p>
+                                                 </div>
+                                             </div>
+                                         </div>
+                                     </div>
+                                 </div>
+                             </div>

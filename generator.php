@@ -1,14 +1,15 @@
-<!-- <?php
-
-?> -->
+<?php 
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+?>
 
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>VitaePresss - Générateur</title>
-    <link rel="stylesheet" href="css/app.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>VitaePresss - Générateur</title>
+        <link rel="stylesheet" href="css/app.css">
 </head>
 <body class="vw-100 vh-100">
     <main class="w-100 h-100 px-0 py-4 not-only:w-100 bg-white-custom overflow-x-hidden">
@@ -45,10 +46,10 @@
                             <h2 class="">Informations Général</h2>
                             <div class="d-md-flex gap-2">
                                 <div class="form-group mx-auto mx-md-0 flex-md-grow-1">
-                                    <label for="" class="p-0">Nom</label>
-                                    <input type="text" class="form-control mb-3" placeholder="Doe" id="nameInput">
                                     <label for="" class="p-0">Prénom</label>
                                     <input type="text" class="form-control mb-3" placeholder="John" id="firstnameInput">
+                                    <label for="" class="p-0">Nom</label>
+                                    <input type="text" class="form-control mb-3" placeholder="Doe" id="nameInput">
                                     <label for="" class="p-0">Intitulé</label>
                                     <input type="text" class="form-control mb-3" placeholder="Développeur" id="mainTitleInput">
                                 </div>
@@ -59,11 +60,11 @@
                                     <label for="" class="p-0">Numéro de téléphone</label>
                                     <input type="text" class="form-control mb-3" placeholder="06 62 54 65 96" id="phoneInput">
                                     <label for="" class="p-0">Adresse mail</label>
-                                    <input type="text" class="form-control mb-3" placeholder="example@mail.com" id="mailInput">
+                                    <input type="email" class="form-control mb-3" placeholder="example@mail.com" id="mailInput">
                                 </div>
                             </div>
                             <label for="" class="p-0">Description</label>
-                            <textarea name="" id="" class="form-control mb-3" placeholder="Je suis.." id="descPersoInput"></textarea>
+                            <textarea class="form-control mb-3" placeholder="Je suis.." id="descPersoInput"></textarea>
                         </div>
 
                         <div class="d-md-flex gap-2">
@@ -138,72 +139,24 @@
                         <div class="w-100 d-flex gap-2 p-0">
                             <button class="btn btn-lg btn-hero flex-grow-1" id="resetForm">Réinitialiser CV</button>
                             <button class="btn btn-lg btn-hero flex-grow-1" id="downloadCV">Télécharger mon CV</button>
-                        </div>
+                        </div>  
                     </form>
                 </div>
 
                 <div class="w-100 mt-5 mt-xl-0" id="preview">
                    <div class="preview-h scrollbar-hide">
-                        <div class="cv-container">
-                            <div class="header">
-                                <h1>John Doe</h1>
-                                <p>Développeur Full Stack</p>
-                                <p class="no-print">Cette section ne sera pas visible dans le PDF</p>
-                            </div>
-                            
-                            <div class="section">
-                                <h2>Informations Personnelles</h2>
-                                <div class="info-grid">
-                                    <div>
-                                        <strong>Email:</strong> john.doe@example.com
-                                    </div>
-                                    <div>
-                                        <strong>Téléphone:</strong> +33 1 23 45 67 89
-                                    </div>
-                                    <div>
-                                        <strong>Ville:</strong> Paris, France
-                                    </div>
-                                    <div>
-                                        <strong>Site Web:</strong> www.johndoe.dev
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="section">
-                                <h2>Expérience Professionnelle</h2>
-                                <div>
-                                    <h3>Développeur Senior - TechCorp</h3>
-                                    <p><em>2020 - Présent</em></p>
-                                    <p>Développement d'applications web avec PHP, JavaScript, React</p>
-                                </div>
-                                <div>
-                                    <h3>Développeur Web - WebSolutions</h3>
-                                    <p><em>2018 - 2020</em></p>
-                                    <p>Création de sites vitrines et e-commerce</p>
-                                </div>
-                            </div>
-                            
-                            <div class="section">
-                                <h2>Compétences</h2>
-                                <ul>
-                                    <li>PHP, Laravel, Symfony</li>
-                                    <li>JavaScript, React, Vue.js</li>
-                                    <li>HTML5, CSS3, Sass</li>
-                                    <li>MySQL, MongoDB</li>
-                                    <li>Git, Docker, CI/CD</li>
-                                </ul>
-                            </div>
+                        <div class="cv-container" id="previewContainer">
+
                         </div>
                    </div>
                 </div>
             </div>
         </section>
     </main>
-
-
-    <script type="module" src="index.js"></script>
+    <script type="module" src="main.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
 </body>
 </html>
