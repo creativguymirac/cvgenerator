@@ -70,25 +70,17 @@ ini_set('display_errors', 1);
                         <div class="d-md-flex gap-2">
                             <div class="w-100 mb-4">
                                 <h2>Formations</h2>
-                                <div class="form-group row mx-auto mx-md-0 flex-md-grow-1">
-                                    <label for="" class="p-0">Intitulé du diplôme ou formation</label>
-                                    <input type="text" class="form-control mb-3" placeholder="Mastère" id="titleFormInput">
-                                    <label for="" class="p-0">Établissement</label>
-                                    <input type="text" class="form-control mb-3" placeholder="Université" id="schoolInput">
-                                    <label for="" class="p-0">Date de début</label>
-                                    <input type="date" class="form-control mb-3" id="startDateSchoolInput">
-                                    <label for="" class="p-0">Date de fin (Facultatif)</label>
-                                    <input type="date" class="form-control mb-3" id="endDateSchoolInput">
-                                    <label for="" class="p-0">Description</label>
-                                    <textarea name="" id="" class="form-control mb-3" placeholder="Étude des droits.." id="descSchoolInput"></textarea>
-                                    <button class="btn btn-lg btn-hero flex-grow-1" id="addFormation">Ajouter la formation</button>
+                                <div class="form-group row mx-auto mx-md-0 flex-md-grow-1" id="formDiv">
+
                                 </div>
+                                <button class="btn btn-lg btn-hero w-100 flex-grow-1 mb-2" type="button" id="addFormation">Ajouter une formation</button>
+                                <button class="btn btn-lg btn-hero bg-danger w-100 flex-grow-1" type="button" id="delFormation">Reinitialiser formations</button>
                             </div>
 
                             <div class="w-100 mb-4">
                                 <h2>Expériences</h2>
-                                <div class="form-group row mx-auto mx-md-0 flex-md-grow-1">
-                                    <label for="" class="p-0">Intitulé du poste</label>
+                                <div class="form-group row mx-auto mx-md-0 flex-md-grow-1" id="expDiv">
+                                    <!-- <label for="" class="p-0">Intitulé du poste</label>
                                     <input type="text" class="form-control mb-3" placeholder="Développeur Full-Stack" id="titleExpInput">
                                     <label for="" class="p-0">Nom de l'entreprise</label>
                                     <input type="text" class="form-control mb-3" placeholder="Google" id="companyNameInput">
@@ -97,9 +89,10 @@ ini_set('display_errors', 1);
                                     <label for="" class="p-0">Date de fin (Facultatif)</label>
                                     <input type="date" class="form-control mb-3" id="endDateExpInput">
                                     <label for="" class="p-0">Description des missions</label>
-                                    <textarea name="" id="" class="form-control mb-3" placeholder="Étude des droits.." id="descExpInput"></textarea>
-                                    <button class="btn btn-lg btn-hero flex-grow-1" id="addExperience">Ajouter l'experience</button>
+                                    <textarea name="" id="" class="form-control mb-3" placeholder="Étude des droits.." id="descExpInput"></textarea> -->
                                 </div>
+                                <button class="btn btn-lg btn-hero w-100 flex-grow-1 mb-2" type="button" id="addExperience">Ajouter une experience</button>
+                                <button class="btn btn-lg btn-hero bg-danger w-100 flex-grow-1" type="button" id="delExperience">Reinitialiser formations</button>
                             </div>
                         </div>
 
@@ -114,6 +107,10 @@ ini_set('display_errors', 1);
                                     <option value="">Confirmé</option>
                                     <option value="">Expert</option>
                                 </select>
+                                <div class="w-100 d-flex flex-wrap align-items-center gap-2 mb-3">
+                                    <p class="p-0 m-0">Compétences:</p>
+                                    <button class="btn-del-content"><span class="p-1"><span class="p-1"><img src="assets/images/close-icon.svg" alt="close icon"></span></span>Developpeur</button>
+                                </div>
                                 <div class="w-100 d-flex gap-2 p-0">
                                     <!-- <button class="btn btn-lg btn-hero flex-grow-1">Effacer</button> -->
                                     <button class="btn btn-lg btn-hero flex-grow-1" id="addCompetence">Ajouter compétence</button>
@@ -123,18 +120,6 @@ ini_set('display_errors', 1);
 
                         <div class="w-100 row mb-4 px-3">
                             <h2 class="mb-3">Gestion du contenu du CV</h2>
-                            <div class="w-100 d-flex flex-wrap align-items-center gap-2 mb-3">
-                                <p class="p-0 m-0">Expériences:</p>
-                                <button class="btn-del-content"><span class="p-1"><span class="p-1"><img src="assets/images/close-icon.svg" alt="close icon"></span></span>Developpeur</button>
-                            </div>
-                            <div class="w-100 d-flex flex-wrap align-items-center gap-2 mb-3">
-                                <p class="p-0 m-0">Formations:</p>
-                                <button class="btn-del-content"><span class="p-1"><img src="assets/images/close-icon.svg" alt="close icon"></span>Developpeur</button>
-                            </div>
-                            <div class="w-100 d-flex flex-wrap align-items-center gap-2 mb-3">
-                                <p class="p-0 m-0">Compétences:</p>
-                                <button class="btn-del-content"><span class="p-1"><span class="p-1"><img src="assets/images/close-icon.svg" alt="close icon"></span></span>Developpeur</button>
-                            </div>
                         </div>
                         <div class="w-100 d-flex gap-2 p-0">
                             <button class="btn btn-lg btn-hero flex-grow-1" id="resetForm">Réinitialiser CV</button>
