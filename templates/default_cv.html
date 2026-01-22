@@ -4,28 +4,38 @@
                                      margin: 0;
                                      padding: 0;
                                      font-family: Arial, Helvetica, sans-serif;
+                                     word-wrap: break-word;
                                  }
                                  
                                  .wrapper {
                                      width: 100%;
                                      /* padding: 2rem 1rem; */
                                      h1 {
-                                         font-size: 24px;
+                                         font-size: 18px;
                                          font-weight: 800;
-                                         margin: 0 0 0.5rem 0;
+                                         margin: 0 0 0.2rem 0;
                                      }
                                      h2 {
-                                         font-size: 18px;
+                                         font-size: 16px;
                                          font-weight: 600;
-                                         margin: 0 0 0.5rem 0;
+                                         margin: 0 0 0.2rem 0;
                                      }
                                      h3 {    
-                                         font-size: 16px;
+                                         font-size: 14px;
                                          font-weight: 400;
-                                         margin: 0 0 0.5rem 0;
+                                         margin: 0 0 0.2rem 0;
                                      }
                                      .section {
-                                         margin: 0 0 0.5rem 0;
+                                        margin: 0 0 0.5rem 0;
+                                        width: 100%;
+                                        max-width: 350px;
+                                     }
+
+
+                                     p {
+                                        font-size: 12px;
+                                        text-wrap: wrap;
+                                        margin: 0;
                                      }
                                  }
                                  .head {
@@ -53,6 +63,12 @@
                                      display: flex;
                                      gap: 2rem;
                                  }
+
+                                 .missionsForm {
+                                    margin: 0 0 1em 0;
+                                 }
+
+
                                  
                              </style>
                              <div class="wrapper">
@@ -71,27 +87,27 @@
                                  </div>
                                  <div class="body">
                                      <h2>Compétences</h2>
-                                     <div class="section competence">
+                                     <div class="section competence" id="compPre">
                                          <p><span>HTML & CSS</span> - <span>Débutant</span></p>
                                          <p><span>Javascript</span> - <span>Débutant</span></p>
                                      </div>
                                      <div class="block">
-                                         <div>
+                                         <div class="sectionWrap">
                                              <h2>Formation</h2>
-                                             <div class="section formation">
+                                             <div class="section formation" id="formPre">
                                                  <h3><span id="formTitlePre">Formation Développeur Full-Stack</span> - <span id="schoolNamePre">Epitech</span></h3>
                                                  <p><span id="endDateFormPre">01/02/2025</span> - <span id="endDateFormPre">01/02/2026</span></p>
-                                                 <div class="missionsForm">
+                                                 <div class="missionsForm" id="missionFormPre">
                                                      <p>Mission 1</p>
                                                  </div>
                                              </div>
                                          </div>
-                                         <div>
+                                         <div class="sectionWrap">
                                              <h2>Expérience</h2>
-                                             <div class="section experience">
-                                                 <h3><span id="formTitlePre">Développeur Full-Stack</span> - <span id="schoolNamePre">Google</span></h3>
-                                                 <p><span>01/07/2025</span> - <span>01/09/2026</span></p>
-                                                 <div class="missionsForm">
+                                             <div class="section experience" id="expPre">
+                                                 <h3><span id="expTitlePre">Développeur Full-Stack</span> - <span id="companyNamePre">Google</span></h3>
+                                                 <p><span id="startDateExpPre">01/07/2025</span> - <span id="endDateExpPre">01/09/2026</span></p>
+                                                 <div class="missionsForm" id="missionExpPre">
                                                      <p>Mission 1</p>
                                                  </div>
                                              </div>

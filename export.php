@@ -47,3 +47,5 @@ function export() {
         exit();
     }
 }
+
+export();
