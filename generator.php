@@ -40,31 +40,31 @@ ini_set('display_errors', 1);
 
             <div class="w-100 d-xl-flex gap-5 mt-5 px-4 lg-px-8">
                 <div id="form" class="form-custom">
-                    <form action="" method="POST" class="w-100 d-flex flex-column  align-items-center">
+                    <form action="export.php" method="POST" class="w-100 d-flex flex-column  align-items-center">
                         
                         <div class="w-100 mb-2">
                             <h2 class="">Informations Général</h2>
                             <div class="d-md-flex gap-2">
                                 <div class="form-group mx-auto mx-md-0 flex-md-grow-1">
-                                    <label for="" class="p-0">Prénom</label>
-                                    <input type="text" class="form-control mb-3" placeholder="John" id="firstnameInput">
-                                    <label for="" class="p-0">Nom</label>
-                                    <input type="text" class="form-control mb-3" placeholder="Doe" id="nameInput">
-                                    <label for="" class="p-0">Intitulé</label>
-                                    <input type="text" class="form-control mb-3" placeholder="Développeur" id="mainTitleInput">
+                                    <label for="firstnameInput" class="p-0">Prénom</label>
+                                    <input type="text" class="form-control mb-3" placeholder="John" name="firstnameInput" id="firstnameInput">
+                                    <label for="nameInput" class="p-0">Nom</label>
+                                    <input type="text" class="form-control mb-3" placeholder="Doe" name="nameInput" id="nameInput">
+                                    <label for="mainTitleInput" class="p-0">Intitulé</label>
+                                    <input type="text" class="form-control mb-3" placeholder="Développeur" name="mainTitleInput" id="mainTitleInput">
                                 </div>
                                 
                                 <div class="form-group mx-auto mx-md-0 flex-md-grow-1">
-                                    <label for="" class="p-0">Adresse</label>
-                                    <input type="text" class="form-control mb-3" placeholder="7 rue de la République, 69003 Lyon" id="addressInput">
-                                    <label for="" class="p-0">Numéro de téléphone</label>
-                                    <input type="text" class="form-control mb-3" placeholder="06 62 54 65 96" id="phoneInput">
-                                    <label for="" class="p-0">Adresse mail</label>
-                                    <input type="email" class="form-control mb-3" placeholder="example@mail.com" id="mailInput">
+                                    <label for="addressInput" class="p-0">Adresse</label>
+                                    <input type="text" class="form-control mb-3" placeholder="7 rue de la République, 69003 Lyon" name="addressInput" id="addressInput">
+                                    <label for="phoneInput" class="p-0">Numéro de téléphone</label>
+                                    <input type="text" class="form-control mb-3" placeholder="06 62 54 65 96" name="phoneInput" id="phoneInput">
+                                    <label for="mailInput" class="p-0">Adresse mail</label>
+                                    <input type="email" class="form-control mb-3" placeholder="example@mail.com" name="mailInput" id="mailInput">
                                 </div>
                             </div>
-                            <label for="" class="p-0">Description</label>
-                            <textarea class="form-control mb-3" placeholder="Je suis.." id="descPersoInput"></textarea>
+                            <label for="descPersoInput" class="p-0">Description</label>
+                            <textarea class="form-control mb-3" placeholder="Je suis.." name="descPersoInput" id="descPersoInput"></textarea>
                         </div>
 
                         <div class="d-md-flex gap-2">
@@ -88,24 +88,16 @@ ini_set('display_errors', 1);
                         </div>
 
                         <div class="w-100 row mb-4">
-                            <div class="form-group row mx-auto">
+                            <div class="form-group row mx-auto" id="compDiv">
                                 <h2 class="p-0 m-0">Compétences</h2>
-                                <label for="" class="p-0">Compétences</label>
-                                <input type="text" class="form-control mb-3" placeholder="Excel" id="competenceInput">
-                                <label for="" class="p-0">Niveau</label>
-                                <select name="" class="form-control mb-3" id="levelInput">
-                                    <option value="Débutant">Débutant</option>
-                                    <option value="Amateur">Amateur</option>
-                                    <option value="Confirmé">Confirmé</option>
-                                    <option value="Expert">Expert</option>
-                                </select>
-                                <div class="w-100 d-flex flex-wrap align-items-center gap-2 p-0 mb-3" id="manageComp">
-                                    <p class="p-0 m-0">Supprimer les compètences :</p>
-                                </div>
-                                <div class="w-100 d-flex gap-2 p-0">
-                                    <!-- <button class="btn btn-lg btn-hero flex-grow-1">Effacer</button> -->
-                                    <button class="btn btn-lg btn-hero flex-grow-1" type="button" id="addCompetence">Ajouter compétence</button>
-                                </div>
+                                
+                            </div>
+                            <div class="w-100 d-flex flex-wrap align-items-center gap-2 p-0 mb-3" id="manageComp">
+                                <p class="p-0 m-0">Supprimer les compètences :</p>
+                            </div>
+                            <div class="w-100 d-flex gap-2 p-0">
+                                <!-- <button class="btn btn-lg btn-hero flex-grow-1">Effacer</button> -->
+                                <button class="btn btn-lg btn-hero flex-grow-1" type="button" id="addCompetence">Ajouter compétence</button>
                             </div>
                         </div>
 
@@ -113,18 +105,18 @@ ini_set('display_errors', 1);
                             <h2 class="mb-3">Gestion du contenu du CV</h2>
                         </div> -->
                         <div class="w-100 d-flex gap-2 p-0">
-                            <button class="btn btn-lg btn-hero flex-grow-1" id="resetForm">Réinitialiser CV</button>
-                            <button class="btn btn-lg btn-hero flex-grow-1" id="downloadCV">Télécharger mon CV</button>
+                            <button class="btn btn-lg btn-hero flex-grow-1" type="button" id="resetForm">Réinitialiser CV</button>
+                            <button class="btn btn-lg btn-hero flex-grow-1" type="submit" id="downloadCV">Télécharger mon CV</button>
                         </div>  
                     </form>
                 </div>
 
                 <div class="w-100 mt-5 mt-xl-0" id="preview">
-                   <div class="preview-h scrollbar-hide">
+                    <div class="preview-h scrollbar-hide">
                         <div class="cv-container" id="previewContainer">
 
                         </div>
-                   </div>
+                    </div>
                 </div>
             </div>
         </section>
